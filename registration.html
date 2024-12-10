@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-container">
+          <h2 class="logo">Aman Health Care</h2>
+          <button class="menu-toggle" id="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+          <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="doctor.html">Doctor</a></li>
+            <li><a href="specialists.html">Speciality</a></li>
+            <li><a href="patient.html">Review</a></li>
+            <li><a href="contact.html">Contact me</a></li>
+            <li><a href="registration.html">Appointment</a></li>
+        </ul>
+        </div>
+      </nav>
+      <section id="appointment-form">
+        <h2 class="section-heading">Book an Appointment</h2>
+        <form action="https://getform.io/f/bxoovpda" method="post" id="contact-form">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your full name">
+    
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="" disabled selected>Select your gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+    
+                <label for="mobile">Mobile Number:</label>
+                <input type="tel" id="mobile" name="mobile" required placeholder="+91 1234567890">
+    
+                <label for="email">Email ID:</label>
+                <input type="email" id="email" name="email" required placeholder="your-email@xyz.com">
+    
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required min="1950-06-01" max="2024-11-28">
+    
+                <label for="disease">Disease/Concern:</label>
+                <select id="disease" name="disease" required>
+                    <option value="" disabled selected>Select your concern</option>
+                    <option value="cold">Cold</option>
+                    <option value="flu">Flu</option>
+                    <option value="diabetes">Diabetes</option>
+                    <option value="cardiac">Cardiac Issues</option>
+                    <option value="other">Other</option>
+                </select>
+    
+                <label for="comments">Additional Comments:</label>
+                <textarea id="comments" name="comments" rows="4" placeholder="Add any additional information..."></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </section>
+    
+    <script>
+       
+    </script>
+    <script src="main.js"></script>
+</body>
+</html>
