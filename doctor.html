@@ -1,121 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Doctors</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@200&family=Courgette&family=Dancing+Script:wght@700&family=Edu+TAS+Beginner:wght@700&family=Lato:wght@300;900&family=Mukta:wght@700&family=Mulish:wght@300&family=Open+Sans&family=PT+Sans:ital,wght@1,700&family=Poppins:wght@300&family=Raleway:wght@100&family=Roboto&family=Roboto+Condensed:wght@700&family=Roboto+Slab&display=swap"
-        rel="stylesheet">
-    <script src="https://kit.fontawesome.com/f30fac2c61.js" crossorigin="anonymous"></script>
-</head>
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@200&family=Courgette&family=Dancing+Script:wght@700&family=Edu+TAS+Beginner:wght@700&family=Lato:wght@300;900&family=Mukta:wght@700&family=Mulish:wght@300&family=Open+Sans&family=PT+Sans:ital,wght@1,700&family=Poppins:wght@300&family=Raleway:wght@100&family=Roboto&family=Roboto+Condensed:wght@700&family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/f30fac2c61.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
-    
-        <nav class="nav">
-            <div class="nav-container">
-                <h2 class="logo">Aman Health Care</h2>
-              <button class="menu-toggle" id="menu-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-              </button>
-              <ul class="nav-links" id="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="doctor.html">Doctor</a></li>
-                <li><a href="specialists.html">Speciality</a></li>
-                <li><a href="patient.html">Review</a></li>
-                <li><a href="contact.html">Contact me</a></li>
-                <li><a href="registration.html">Appointment</a></li>
-            </ul>
-            </div>
-          </nav>
+  <body>
+    <nav class="nav">
+      <div class="nav-container">
+        <h2 class="logo">Aman Health Care</h2>
+        <button class="menu-toggle" id="menu-toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="doctor.html">Doctor</a></li>
+          <li><a href="specialists.html">Speciality</a></li>
+          <li><a href="patient.html">Review</a></li>
+          <li><a href="contact.html">Contact me</a></li>
+          <li><a href="registration.html">Appointment</a></li>
+        </ul>
+      </div>
+    </nav>
     <div id="doctor">
-        <div class="head">
-            <h1>Our Doctor's</h1>
-            <br>
-            <br>
-            
+      <div class="head">
+        <h1>Our Doctors</h1>
+      </div>
+      <div class="teams">
+        <div
+          class="card"
+          onclick="showDetails('Dr. Aisha Gupta', 'Cardiologist', 'Expert in diagnosing and treating heart diseases, including coronary artery disease and arrhythmias.')"
+        >
+          <img src="dt1.jpg" alt="Portrait of Dr. Aisha Gupta, Cardiologist" />
+          <p>Dr. Aisha Gupta</p>
+          <p>Cardiologist</p>
         </div>
-        <div class="teams">
-            <div class="card">
-                <img src="dt1.jpg" alt="">
-                <p>Dr. Aisha Gupta  </p>
-                <p>Cardiologist</p>
-
-            </div>
-            <div class="card">
-                <img src="dt2.jpg" alt="">
-                <p>Dr. Priya Sharma </p>
-                <p>General Surgeon</p>
-
-            </div>
-            <div class="card">
-                <img src="dt3.jpg" alt="">
-                <p>Dr. Sameer Desai </p>
-                <p>Gastroenterologist</p>
-
-            </div>
-            <div class="card">
-                <img src="d4.jpg" alt="">
-                <p>Dr. Rohit Malhotra </p>
-                <p>Urologist</p>
-
-            </div>
-            <div class="card">
-                <img src="d5.jpg" alt="">
-                <p>Dr. Neha Verma </p>
-                <p>Pediatrician</p>
-
-            </div>
-            <div class="card">
-                <img src="d6.jpg" alt="">
-                <p>Dr. Sanya Kapoor </p>
-                <p>Gynecologist</p>
-
-            </div>
-            <div class="card">
-                <img src="d7.jpg" alt="">
-                <p>Dr. Meenakshi Rao </p>
-                <p>Neurologist</p>
-
-            </div>
-            <div class="card">
-                <img src="d8.jpg" alt="">
-                <p>Dr. Anant Menon </p>
-                <p>Oncologist</p>
-
-            </div>
-            <div class="card">
-                <img src="d9.jpg" alt="">
-                <p>Dr. Arun Patel </p>
-                <p>Neurologist</p>
-
-            </div>
-            <div class="card">
-                <img src="d10.jpg" alt="">
-                <p>Dr. Ritu Singh </p>
-                <p>Dermatologist</p>
-
-            </div>
-            <div class="card">
-                <img src="d11.jpg" alt="">
-                <p>Dr. Vikram Singh </p>
-                <p>Cardiologist</p>
-
-            </div>
-            <div class="card">
-                <img src="d12.jpg" alt="">
-                <p>Dr. Rajesh Kumar </p>
-                <p>Orthopedic Surgeon</p>
-
-            </div>
+        <div
+          class="card"
+          onclick="showDetails('Dr. Priya Sharma', 'General Surgeon', 'Specialized in performing surgeries including abdominal and breast surgeries.')"
+        >
+          <img
+            src="dt2.jpg"
+            alt="Portrait of Dr. Priya Sharma, General Surgeon"
+          />
+          <p>Dr. Priya Sharma</p>
+          <p>General Surgeon</p>
+        </div>
+        <div
+          class="card"
+          onclick="showDetails('Dr. Sameer Desai', 'Gastroenterologist', 'Expert in diagnosing and treating gastrointestinal disorders.')"
+        >
+          <img
+            src="dt3.jpg"
+            alt="Portrait of Dr. Sameer Desai, Gastroenterologist"
+          />
+          <p>Dr. Sameer Desai</p>
+          <p>Gastroenterologist</p>
+        </div>
+        <div
+          class="card"
+          onclick="showDetails('Dr. Rohit Malhotra', 'Urologist', 'Specialist in urinary tract conditions and male reproductive health.')"
+        >
+          <img src="d4.jpg" alt="Portrait of Dr. Rohit Malhotra, Urologist" />
+          <p>Dr. Rohit Malhotra</p>
+          <p>Urologist</p>
+        </div>
+        <div
+          class="card"
+          onclick="showDetails('Dr. Neha Verma', 'Pediatrician', 'Dedicated to providing medical care for children and adolescents.')"
+        >
+          <img src="d5.jpg" alt="Portrait of Dr. Neha Verma, Pediatrician" />
+          <p>Dr. Neha Verma</p>
+          <p>Pediatrician</p>
+        </div>
+        <div
+          class="card"
+          onclick="showDetails('Dr. Sanya Kapoor', 'Gynecologist', 'Expert in women’s reproductive health and prenatal care.')"
+        >
+          <img src="d6.jpg" alt="Portrait of Dr. Sanya Kapoor, Gynecologist" />
+          <p>Dr. Sanya Kapoor</p>
+          <p>Gynecologist</p>
+        </div>
+        <div
+          class="card"
+          onclick="showDetails('Dr. Meenakshi Rao', 'Neurologist', 'Expert in diagnosing and treating brain and nervous system disorders.')"
+        >
+          <img src="d7.jpg" alt="Portrait of Dr. Meenakshi Rao, Neurologist" />
+          <p>Dr. Meenakshi Rao</p>
+          <p>Neurologist</p>
+        </div>
+        <div
+          class="card"
+          onclick="showDetails('Dr. Anant Menon', 'Oncologist', 'Specializes in diagnosing and treating cancer patients.')"
+        >
+          <img src="d8.jpg" alt="Portrait of Dr. Anant Menon, Oncologist" />
+          <p>Dr. Anant Menon</p>
+          <p>Oncologist</p>
+        </div>
+        <div
+          class="card"
+          onclick="showDetails('Dr. Arun Patel', 'Neurologist', 'Focuses on treating disorders of the nervous system.')"
+        >
+          <img src="d9.jpg" alt="Portrait of Dr. Arun Patel, Neurologist" />
+          <p>Dr. Arun Patel</p>
+          <p>Neurologist</p>
+        </div>
+        <div
+          class="card"
+          onclick="showDetails('Dr. Ritu Singh', 'Dermatologist', 'Expert in skin-related conditions and cosmetic skin treatments.')"
+        >
+          <img src="d10.jpg" alt="Portrait of Dr. Ritu Singh, Dermatologist" />
+          <p>Dr. Ritu Singh</p>
+          <p>Dermatologist</p>
+        </div>
+        <div
+          class="card"
+          onclick="showDetails('Dr. Vikram Singh', 'Cardiologist', 'Specialized in advanced heart disease treatments and diagnostics.')"
+        >
+          <img src="d11.jpg" alt="Portrait of Dr. Vikram Singh, Cardiologist" />
+          <p>Dr. Vikram Singh</p>
+          <p>Cardiologist</p>
+        </div>
+        <div
+          class="card"
+          onclick="showDetails('Dr. Rajesh Kumar', 'Orthopedic Surgeon', 'Specializes in treating musculoskeletal injuries and performing surgeries.')"
+        >
+          <img
+            src="d12.jpg"
+            alt="Portrait of Dr. Rajesh Kumar, Orthopedic Surgeon"
+          />
+          <p>Dr. Rajesh Kumar</p>
+          <p>Orthopedic Surgeon</p>
+        </div>
+      </div>
+    </div>
+    <div id="doctor-details-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeDetails()">&times;</span>
+            <h2 id="doctor-name">Doctor Name</h2>
+            <p id="doctor-specialization">Specialization</p>
+            <p id="doctor-description">Description</p>
         </div>
     </div>
-    
-    <script src="main.js"></script>
-</body>
 
+
+    <script src="main.js"></script>
+  </body>
 </html>

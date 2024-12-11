@@ -5,7 +5,20 @@ let connectBtn = document.getElementById("connectBtn");
 const menuToggle = document.getElementById('menu-toggle');
 const navLinks = document.getElementById('nav-links');
 const navLinkItems = document.querySelectorAll('#nav-links a');
+function showDetails(name, specialization, description, image) {
+  document.getElementById("doctor-name").textContent = name;
+  document.getElementById("doctor-specialization").textContent = specialization;
+  document.getElementById("doctor-description").textContent = description;
 
+
+  const modal = document.getElementById("doctor-details-modal");
+  modal.style.display = "flex";
+}
+
+function closeDetails() {
+  const modal = document.getElementById("doctor-details-modal");
+  modal.style.display = "none";
+}
 menuToggle.addEventListener('click', () => {
   navLinks.classList.toggle('show');
 });
