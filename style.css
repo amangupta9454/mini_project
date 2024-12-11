@@ -508,163 +508,90 @@ main {
     }
 }
 /* patient review */
-  .header-section {
-    text-align: center;
-    padding: 50px;
-    background-color: #007bff;
-    color: #fff;
-  }
-  
-  .header-section h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-  }
-  
-  .header-section p {
-    font-size: 1.2em;
+  /* Header Section */
+.header-section {
+  text-align: center;
+  padding: 60px;
+  background-color: #007bff;
+  color: #fff;
+}
+
+.header-section h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+.header-section p {
+  font-size: 1.2em;
+  margin-top: 5px;
+}
+
+/* Reviews Section */
+.reviews-section {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.reviews-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.review-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.review-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.review-card h4 {
+  margin-top: 10px;
+  color: #007bff;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .reviews-container {
+    gap: 15px;
   }
 
-  .reviews-section {
-    padding: 30px 20px;
-    background-color: #fff;
-    overflow: hidden; 
-  }
-  
-  .reviews-container {
-    display: flex;
-    gap: 20px;
-    padding: 10px;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-padding: 20px; 
-    -webkit-overflow-scrolling: touch;
-  }
-  
-  .reviews-container::-webkit-scrollbar {
-    display: none; 
-  }
-  
   .review-card {
-    flex: 0 0 90%; 
-    max-width: 300px;
-    background-color: #f0f0f0;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    padding: 20px;
-    scroll-snap-align: start;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 280px;
   }
-  
-  .review-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .review-card {
+    width: 100%;
   }
-  
-  .review-card img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-bottom: 15px;
+
+}
+
+@media (max-width: 480px) {
+  .header-section h1 {
+    font-size: 1.5em;
   }
-  
-  .review-card p {
-    font-style: italic;
-    margin: 10px 0;
-    font-size: 0.9em;
-  }
-  
-  .review-card h4 {
-    margin-top: 10px;
-    font-weight: bold;
-    font-size: 1.1em;
-  }
-  
-  .feedback-section {
-    padding: 30px 20px;
-    background-color: #007bff;
-    color: #fff;
-    text-align: center;
-  }
-/*   
-  .feedback-section h2 {
-    font-size: 2em;
-    margin-bottom: 15px;
-  }
-  
-  .feedback-section p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-  }
-  
-  .feedback-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .feedback-form input,
-  .feedback-form textarea {
-    width: 90%;
-    max-width: 400px;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: none;
-    border-radius: 5px;
-  }
-  
-  .feedback-form button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: #ffcc00;
-    color: #333;
+
+  .header-section p {
     font-size: 1em;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
   }
+
   
-  .feedback-form button:hover {
-    background-color: #ffaa00;
-  }
-   */
-  @media (min-width: 1024px) {
-    .reviews-container {
-      justify-content: center;
-    }
-  
-    .review-card {
-      flex: 0 0 250px;
-    }
-  
-    .feedback-form input,
-    .feedback-form textarea {
-      width: 80%;
-    }
-  }
-  
-  
-  @media (min-width: 768px) and (max-width: 1023px) {
-    .review-card {
-      flex: 0 0 300px;
-    }
-  
-    .feedback-form input,
-    .feedback-form textarea {
-      width: 80%;
-    }
-  }
-  
-  @media (max-width: 767px) {
-    .review-card {
-      flex: 0 0 90%;
-    }
-  
-    .feedback-form input,
-    .feedback-form textarea {
-      width: 95%;
-    }
-  }
+}
   /* footer */
 .footer {
     display: flex;
